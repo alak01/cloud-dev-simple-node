@@ -3,8 +3,10 @@ function sleep(ms) {
 }
 
 async function main() {
+  const env_value = process.env.ENV_VALUE
   while(true) {
     console.log('Containers rule!');
+    console.log('env value is ', env_value)
     await sleep(5000);
   }
 }
